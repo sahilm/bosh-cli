@@ -77,7 +77,5 @@ func (c VMsCmd) printDeployment(dep boshdir.Deployment, instTable InstanceTable)
 		table.Rows = append(table.Rows, row)
 	}
 
-	c.ui.PrintTable(table)
-
-	return nil
+	return c.ui.PrintTable(table)
 }
